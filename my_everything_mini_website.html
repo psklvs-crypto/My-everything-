@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Man, My Everything 🤍</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(145deg,#eaf5ff,#fff 60%,#d9ebff);font-family:Georgia,'Times New Roman',serif;color:#28486d}
+.card{max-width:430px;width:100%;background:#ffffffdf;border:1px solid #d4e7fb;border-radius:25px;padding:27px 21px;text-align:center;box-shadow:0 14px 40px #7aa9d52b}
+.heart{font-size:36px;animation:beat 1.2s infinite}h1{font-size:25px;margin:10px 0;color:#315f91}.sub{font:italic 14px Arial,sans-serif;color:#6f8cac}
+.message{font-size:17px;line-height:1.75;margin:20px 0}.tamil{font-size:18px;color:#426d9b}
+button{border:0;border-radius:28px;padding:12px 17px;margin:5px;background:#d9ebff;color:#244e7d;font-size:15px;cursor:pointer}
+#reply{min-height:60px;margin-top:14px;font-size:16px;line-height:1.6;color:#315f91}
+footer{font:12px Arial,sans-serif;color:#91a9c2;margin-top:18px}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+.float{position:fixed;bottom:-30px;pointer-events:none;animation:rise 5s linear forwards}@keyframes rise{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}
+</style></head>
+<body><main class="card">
+<div class="heart">🤍</div><p class="sub">a little piece of my heart, just for you…</p>
+<h1>To My Man, My Everything 🫶</h1>
+<div class="message">
+I wish I could be beside you right now… just hold you close and forget how far apart we are. I miss your voice, your presence, and even the little things I can’t explain. 🥺<br><br>
+<span class="tamil">“Unna romba romba miss panren… nee pakkathula irundha, tight-ah hug pannitu konja neram kooda vida maatten.”</span><br><br>
+<span class="tamil">உன்னை ரொம்ப மிஸ் பண்றேன். இப்போ நீ பக்கத்துல இருந்தா, உன்னை கட்டிப்பிடிச்சுக்கிட்டே இருப்பேன். 🤍</span><br><br>
+If I could be anywhere right now, it would be right next to you. 💙
+</div>
+<p style="font-size:15px">If I could send you something right now…</p>
+<button onclick="show('🫂 One tight hug, my man. Konjam neram illa… romba neram unna hug pannikanum. Wish this was real.')">🫂 Hug me</button>
+<button onclick="show('💋 Oru soft forehead kiss for you… and one more, because I miss you that much.')">💋 Kiss</button>
+<button onclick="show('My everything, I don’t need a perfect moment. I just want you near me. Un kooda irundha podhum. I miss you more than I can explain. 🤍')">🥺 What I really feel</button>
+<div id="reply" aria-live="polite"></div><footer>All my love, all my missing-you feelings 🤍</footer>
+</main><script>
+function show(t){document.getElementById('reply').textContent=t;for(let i=0;i<7;i++){let h=document.createElement('span');h.className='float';h.textContent=['🤍','🫶','💙','💋'][Math.floor(Math.random()*4)];h.style.left=(10+Math.random()*80)+'%';h.style.fontSize=(18+Math.random()*16)+'px';h.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),6500)}}
+</script></body></html>
